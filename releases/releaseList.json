@@ -1,0 +1,19 @@
+[
+  {
+    "Id": "0",
+    "Name": "FreeImaget.NET 3.17.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "*Files:*\n* FreeImage.dll (native DLL)\n* FreeImageNET.dll (.NET-Wrapper DLL)\n* Documentation.chm (Compiled HTML Help File)",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2015-08-05T03:13:55.26-07:00",
+    "Files": [
+      {
+        "Id": "70beb659-1bdd-4751-a49c-7f08e5b8fb7a",
+        "FileName": "FreeImage.NET_3.17.0.4.zip",
+        "Url": "./0/70beb659-1bdd-4751-a49c-7f08e5b8fb7a",
+        "Type": "Application",
+        "UploadDate": "2015-08-05T03:13:26.713-07:00"
+      }
+    ]
+  }
+]

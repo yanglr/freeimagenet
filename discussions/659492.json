@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1488135",
+    "ThreadId": "659492",
+    "Html": "Hi,\r<br />\nI try to use the library FreeImage.net 3.17.0 in my app (Asp.net 4.5 x64 app).\r<br />\nI've downloaded the library zip (FreeImage.NET_3.17.0.4.zip at CodePlex), copied to app folder and added reference in my project.\r<br />\nIn my app_folder/bin I have also the FreeImage.dll 3.17.0 wich is provided too in the zip file.\r<br />\nAt runtime, I have an error &quot;Unable to load assembly 'FreeImageNET' or one of his dependencies....&quot;\r<br />\n<br />\nThis error seems to be specific at the 3.17.0 version, since it is ok with a precedente version.\r<br />\n<br />\nDoes FreeImageNet.Dll have others dependencies than FreeImage.dll ?\r<br />\nDo you have an idea of wich dependency could be missing or how I can get the names of missing dependencies.\r<br />\n<br />\nThanks\r<br />\nMab<br />\n",
+    "PostedDate": "2016-11-16T15:33:07.803-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1488589",
+    "ThreadId": "659492",
+    "Html": "Hi\r<br />\n<br />\nThere should not be any none .NET framework dependencies. I have never done something in Asp.net so I have no idea what could be causing this..\r<br />\n<br />\nRegards<br />\n",
+    "PostedDate": "2016-11-22T11:08:01.657-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

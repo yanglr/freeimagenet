@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WICMetadataHandler>
+	<Examples>
+		<example>
+			<code>
+				using (FreeImageBitmap fib = new FreeImageBitmap(path))
+				{
+					WICMetadataHandler metadata = fib.GetWICMetadataHandler();
+					metadata.DateTaken = DateTime.Now;
+					metadata.Comment = "Hallo";
+					object alt = metadata.GetQuery("System.GPS.Latitude");
+					metadata.Save();
+				}
+			</code>
+		</example>
+	</Examples>
+</WICMetadataHandler>

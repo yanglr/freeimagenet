@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Currently known missing functions:\n* FreeImage_JPEGTransformFromHandle\n* FreeImage_JPEGTransformCombined\n* FreeImage_JPEGTransformCombinedU\n* FreeImage_JPEGTransformCombinedFromMemory\n* FreeImage_GetMemorySize\n* FreeImage_SetMetadataKeyValue\n* FreeImage_ConvertFromRawBitsEx\n* FreeImage_ConvertToRGBAF\n* FreeImage_ConvertToRGBA16\n\nFile: [FreeImageStaticImports.cs](https://freeimagenet.codeplex.com/SourceControl/latest#FreeImage.NET/FreeImage.NET/FreeImageStaticImports.cs)",
+    "LastUpdatedDate": "2015-08-05T03:18:12.507-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "freeimagenet",
+    "ReportedDate": "2015-08-04T08:50:02.267-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Import missing functions",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 39
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

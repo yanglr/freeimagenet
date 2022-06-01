@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="924e7fe3-d034-48b5-9237-5a1e25d96b2f" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+       <!--<autoOutline />--> 
+
+      <para>
+		  This is the Documentation for the <externalLink><linkText>FreeImage.NET</linkText><linkUri>http://freeimagenet.codeplex.com/</linkUri></externalLink> Project,
+		  which is a .NET Wrapper around the <externalLink><linkText>FreeImage Library</linkText><linkUri>http://freeimage.sourceforge.net/</linkUri></externalLink>.
+		  You can find the Documentation for the FreeImage Library <externalLink><linkText>here</linkText><linkUri>https://sourceforge.net/projects/freeimage/files/</linkUri></externalLink>.
+	  </para>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+	<section>
+		<title>Changelog</title>
+		<content>
+			<!--<autoOutline/>-->
+		</content>
+		<sections>
+			<section address="v3.17.0.5">
+				<title>v3.17.0.5</title>
+				<content>
+					<list class="bullet">
+						<listItem>
+							<para>
+								Added <codeEntityReference>M:FreeImageAPI.Metadata.WICMetadataHandler.GetAllQueries</codeEntityReference> and
+								<codeEntityReference>M:FreeImageAPI.Metadata.WICMetadataHandler.SetQueries(System.Collections.Generic.Dictionary{System.String,System.Object})</codeEntityReference> Methods
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Split <codeEntityReference>T:FreeImageAPI.FreeImageBitmap</codeEntityReference> into immutable base class
+								<codeEntityReference>T:FreeImageAPI.FreeImageBitmapBase</codeEntityReference> and mutable class <codeEntityReference>T:FreeImageAPI.FreeImageBitmap</codeEntityReference>
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Added <codeEntityReference>P:FreeImageAPI.FreeImageBitmapBase.MemorySize</codeEntityReference> and
+								<codeEntityReference>P:FreeImageAPI.FreeImageBitmapBase.DIBSize</codeEntityReference> Properties
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Changed the behaviour of <codeEntityReference>M:FreeImageAPI.FreeImage.LoadFromStream(System.IO.Stream,FreeImageAPI.FREE_IMAGE_LOAD_FLAGS,FreeImageAPI.FREE_IMAGE_FORMAT@)</codeEntityReference>
+								so that it reads from the current position in the stream.
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Added <codeEntityReference>T:FreeImageAPI.FreeImageBitmap2</codeEntityReference> class which is intended to make it easier to read pixel data from various bitmap types
+								and also adds some experimental methods (<codeEntityReference>M:FreeImageAPI.FreeImageBitmap2.GetDominantColorRGBA(FreeImageAPI.RGBA)</codeEntityReference>,
+								<codeEntityReference>M:FreeImageAPI.FreeImageBitmap2.RemoveBackground(FreeImageAPI.RGBA,System.Double)</codeEntityReference>).
+							</para>
+						</listItem>
+					</list>
+				</content>
+			</section>
+			<section address="v3.17.0.4">
+				<title>v3.17.0.4</title>
+				<content>
+					<list class="bullet">
+						<listItem>
+							<para>
+								Added <codeEntityReference>M:FreeImageAPI.FreeImageBitmapBase.CreateView(System.Int32,System.Int32,System.Int32,System.Int32)</codeEntityReference> Methods
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Renamed <codeEntityReference>M:FreeImageAPI.FreeImageBitmapBase.GetThumbnailImage(System.Int32,System.Boolean)</codeEntityReference> to
+								<codeEntityReference>M:FreeImageAPI.FreeImageBitmapBase.MakeThumbnail(System.Int32,System.Boolean)</codeEntityReference>
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Updated <codeEntityReference>T:FreeImageAPI.FREE_IMAGE_COLOR_OPTIONS</codeEntityReference> Enumeration
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Added <codeEntityReference>T:FreeImageAPI.FREE_IMAGE_RESCALE_FLAGS</codeEntityReference> Enumeration
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Added <codeEntityReference>M:FreeImageAPI.FreeImageBitmapBase.RescaleRect(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,FreeImageAPI.FREE_IMAGE_FILTER,FreeImageAPI.FREE_IMAGE_RESCALE_FLAGS)</codeEntityReference> Method
+							</para>
+						</listItem>
+					</list>
+				</content>
+			</section>
+			<section address="v3.17.0.3">
+				<title>v3.17.0.3</title>
+				<content>
+					<list class="bullet">
+						<listItem>
+							<para>
+								Improved Documentation
+							</para>
+						</listItem>
+						<listItem>
+							<para>
+								Moved <codeEntityReference>T:FreeImageAPI.Metadata.WICMetadataHandler</codeEntityReference> from the
+								<codeEntityReference>N:FreeImageAPI</codeEntityReference> to the <codeEntityReference>N:FreeImageAPI.Metadata</codeEntityReference> Namespace
+							</para>
+						</listItem>
+					</list>
+				</content>
+			</section>
+			<section address="v3.17.0.2">
+				<title>v3.17.0.2</title>
+				<content>
+					<list class="bullet">
+						<listItem>
+							<para>
+								Added support for Windows Imaging Component Metadata Handler (<codeEntityReference>T:FreeImageAPI.Metadata.WICMetadataHandler</codeEntityReference> Class,
+								<codeEntityReference>M:FreeImageAPI.FreeImageBitmap.GetWICMetadataHandler</codeEntityReference> Method)
+							</para>
+						</listItem>
+					</list>
+				</content>
+			</section>
+			<section address="v3.17.0.1">
+				<title>v3.17.0.1</title>
+				<content>
+					<list class="bullet">
+						<listItem>
+							<para>Added FIF_JXR and FIF_WEBP to <codeEntityReference>T:FreeImageAPI.FREE_IMAGE_FORMAT</codeEntityReference> Enumeration</para>
+						</listItem>
+						<listItem>
+							<para>Added WebP and JPEG XR save flags to <codeEntityReference>T:FreeImageAPI.FREE_IMAGE_SAVE_FLAGS</codeEntityReference> Enumeration</para>
+						</listItem>
+						<listItem>
+							<para>Added RAW_HALFSIZE, RAW_UNPROCESSED and FIF_LOAD_NOPIXELS to <codeEntityReference>T:FreeImageAPI.FREE_IMAGE_LOAD_FLAGS</codeEntityReference> Enumeration</para>
+						</listItem>
+						<listItem>
+							<para>
+								Added <codeEntityReference>M:FreeImageAPI.FreeImage.FIFSupportsNoPixels(FreeImageAPI.FREE_IMAGE_FORMAT)</codeEntityReference> Method
+							</para>
+						</listItem>
+					</list>
+				</content>
+			</section>
+			<section address="v3.17.0.0">
+				<title>v3.17.0.0</title>
+				<content>
+					<list class="bullet">
+						<listItem>
+							<para>Initial code released with FreeImage 3.17.0</para>
+						</listItem>
+					</list>
+				</content>
+			</section>
+		</sections>
+	</section>
+
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
