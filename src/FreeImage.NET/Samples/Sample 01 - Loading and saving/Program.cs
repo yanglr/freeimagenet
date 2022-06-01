@@ -1,11 +1,6 @@
 ﻿using System;
 using System.IO;
 using FreeImageAPI;
-using System.Collections.Generic;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Runtime.InteropServices;
 
 namespace Sample01
 {
@@ -36,14 +31,15 @@ namespace Sample01
 	{
 		const string fileName = @"Sample.jpg";
 		const string outFileName = @"Sample.tif";
+        private readonly string _fullFileName = Path.Combine(Directory.GetParent(Environment.CurrentDirectory)?.Parent?.FullName, fileName);
 		FIBITMAP dib = new FIBITMAP();
 		string message = null;
 
 		public void Example01()
 		{
-			if (!File.Exists(fileName))
+			if (!File.Exists(_fullFileName))
 			{
-				Console.WriteLine(fileName + " does not exist. Aborting.");
+				Console.WriteLine(_fullFileName + " does not exist. Aborting.");
 				return;
 			}
 
@@ -101,7 +97,7 @@ namespace Sample01
 
 			// 'LoadEx' is a comfortable way of loading a bitmap. 'LoadEx' tries to find out the format of
 			// the file and will use this to load it. It will use DEFAULT loading values.
-			dib = FreeImage.LoadEx(fileName);
+			dib = FreeImage.LoadEx(_fullFileName);
 
 			// Check if the handle is null which means the bitmap could not be loaded.
 			if (dib.IsNull)
@@ -140,7 +136,7 @@ namespace Sample01
 			FreeImage.UnloadEx(ref dib);
 
 			// Load the example bitmap.
-			dib = FreeImage.LoadEx(fileName);
+			dib = FreeImage.LoadEx(_fullFileName);
 
 			// Check whether loading succeeded.
 			if (dib.IsNull)
