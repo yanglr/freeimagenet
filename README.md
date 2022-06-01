@@ -20,3 +20,8 @@ This is not an attempt to fully support the FreeImage Library and cover every fu
 
 
 If you miss something or want to propose a feature, please [open a Workitem](http://web.archive.org/web/20180531111147mp_/https:/freeimagenet.codeplex.com/WorkItem/Create).
+
+## FreeImage Version
+This is for FreeImage version `3.17.0.4`.
+
+Successfully compiled with VS 2019 and VS 2022.
