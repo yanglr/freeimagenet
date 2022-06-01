@@ -25,3 +25,11 @@ If you miss something or want to propose a feature, please [open a Workitem](htt
 This is for FreeImage version `3.17.0.4`.
 
 Successfully compiled with VS 2019 and VS 2022.
+
+## Official documentation
+
+Online version: <https://documentation.help/FreeImage.NET/>
+
+PDF: <https://documentation.help/FreeImage.NET/documentation.pdf>
+
+
